@@ -19,6 +19,7 @@ public class ProjectReviewCompany extends PreRequirements{
 			companyPage.writeReview();
 			ProfilePage profilepage = new ProfilePage();
 			String reviewId = profilepage.verifyCompanyReview(profileUrl);
+			//To proceed only if a valid reviewId is retrieved from profile page
 			if(reviewId!=null)
 			{
 				companyPage.verifyReview(reviewId);
